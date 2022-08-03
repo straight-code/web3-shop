@@ -4,6 +4,7 @@ import hoodie3 from "./images/5.png";
 import slides from "./images/4.png";
 import tee1 from "./images/6.png";
 import acc1 from "./images/1.png";
+import sticker1 from "./images/logo1.png";
 
 export const books = {
   Mens: [
@@ -49,6 +50,14 @@ export const books = {
       image: slides,
       about:
         "Finish off your look with your straight-code® slides."
+    },
+    {
+      name: "straight-code® sticker",
+      price: 0.29,
+      rating: 5,
+      image: sticker1,
+      about:
+        "straight-code® stickers."
     },
   ],
   Womens: [
