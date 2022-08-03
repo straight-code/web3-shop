@@ -25,7 +25,7 @@ function Purchase({book}) {
     const options1 = {
       type: "native", 
       amount: Moralis.Units.ETH(priceMatic), 
-      receiver: "xxxxx"
+      receiver: "0xF389203e9E359206F88Da7c2f6c6c5F0b11280D1"
     }
     let result = await Moralis.transfer(options1)
 
@@ -55,7 +55,7 @@ function Purchase({book}) {
         <Option value={4}>4</Option>
         <Option value={5}>5</Option>
       </Select>
-      {chainId === "0x13881" &&
+   
       <Button
       className="login"
       style={{ width: "100%", marginTop: "50px" }}
@@ -63,8 +63,6 @@ function Purchase({book}) {
     >
       <ShoppingCartOutlined /> Buy Now
     </Button>
-      }
-      
       <Modal
         title="Purchase Product"
         visible={isModalVisible}

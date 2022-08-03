@@ -1,6 +1,6 @@
 .site-page-header-ghost-wrapper {
   padding: 2px;
-  background-color: #131921;
+  background-color: #234244;
 }
 
 .site-page-subheader-ghost-wrapper {
@@ -16,7 +16,7 @@
 
 .categories:hover{
   cursor:pointer;
-  color: #adadad; 
+  color: #b427f5; 
 }
 
 
