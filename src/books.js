@@ -74,4 +74,5 @@ export const books = {
   Others: [],
   Softwares: [],
   Tools: [],
+  Soon: [],
 };

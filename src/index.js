@@ -9,7 +9,7 @@ import { MoralisProvider } from "react-moralis";
 
 ReactDOM.render(
   <React.StrictMode>
-    <MoralisProvider appId="xxxxxx" serverUrl="xxxxx">
+    <MoralisProvider appId="lFK49zivoBqjepzybU1qHFJwaaX1GFkNjlwM36sX" serverUrl="https://cldayihmdlvu.usemoralis.com:2053/server">
       <BrowserRouter>
         <App />
       </BrowserRouter>
@@ -21,4 +21,19 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+function sendToAnalytics(metric) {
+  const body = JSON.stringify(metric);
+  const url = 'https://shop.straight-code.xyz/stats';
+
+  // Use `navigator.sendBeacon()` if available, falling back to `fetch()`
+  if (navigator.sendBeacon) {
+    navigator.sendBeacon(url, body);
+  } else {
+    fetch(url, { body, method: 'POST', keepalive: true });
+  }
+}
+
+reportWebVitals(sendToAnalytics); 
+
 reportWebVitals();
