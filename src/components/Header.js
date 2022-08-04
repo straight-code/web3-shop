@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './Header.css'
 import str8 from "../images/logo.png";
 import bg from "../images/bg.png";
+import bg1 from "../images/bg1.png";
+
 import Store from "../images/store.png";
 import {ShoppingCartOutlined, MenuOutlined} from "@ant-design/icons";
 
@@ -20,6 +22,10 @@ const Header = () => {
           <>
           <img src={str8} className="logo"></img>
           <img src={Store} className="logo"></img>
+          <img src={bg1} className="logo"></img>
+          <img src={bg} className="logo"></img>
+          <img src={bg} className="logo"></img>
+
           <Button 
          className="login"
          key="1" 
@@ -27,10 +33,6 @@ const Header = () => {
          onClick={() => authenticate()}>
           {account ? <span>{account.slice(0,5)}...</span> : <span>login</span>}
           </Button>
-          <img src={bg} className="logo"></img>
-          <img src={bg} className="logo"></img>
-          <img src={bg} className="logo"></img>
-          <img src={bg} className="logo"></img> 
           <Space size={"large"}></Space>
           </>
         ]}>
