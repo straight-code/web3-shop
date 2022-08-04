@@ -21,10 +21,8 @@ const Header = () => {
         extra={[
           <>
           <img src={str8} className="logo"></img>
-          <img src={Store} className="logo"></img>
           <img src={bg1} className="logo"></img>
-          <img src={bg} className="logo"></img>
-          <img src={bg} className="logo"></img>
+          
 
           <Button 
          className="login"
