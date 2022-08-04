@@ -7,18 +7,17 @@ import Carousel1 from "../images/carousel1.png";
 import Carousel2 from "../images/carousel2.png";
 import Carousel3 from "../images/carousel3.png";
 import productsImg from "../images/products.png";
-import tee1 from "../images/6.png";
-import hoodie3 from "../images/5.png";
-import acc2 from "../images/1.png";
-import acc3 from "../images/4.png";
+import tee1 from "../images/tee1.png";
+import hoodie3 from "../images/hoodie3.png";
+import pad1 from "../images/pad1.png";
+import slides1 from "../images/slides1.png";
 import softwares from "../images/softwares.png";
 import tools from "../images/tools.png";
-import others from "../images/others.png";
 import soon from "../images/soon.png";
 
 
 const carousel = [Carousel1,Carousel2,Carousel3];
-const catCard = [acc2, tee1,hoodie3,acc3];
+const catCard = [pad1, tee1,hoodie3,slides1];
 const Home = () => {
 
 return(
@@ -35,32 +34,32 @@ return(
         <h1>Browse</h1>
         <img src={productsImg} alt="ALL" className="card-content"></img>
         <br />
-        <Link to="/categories" state={"Mens"} className="link">
+        <Link to="/categories" state={"Hoodies"} className="link">
           Shop Now
         </Link>
         <br/>
       </Card>
       <Card className="card">
-        <h1>Mens</h1>
-        <img src={tee1} alt="Womens" className="card-content"></img>
+        <h1>Tees</h1>
+        <img src={tee1} alt="tee" className="card-content"></img>
         <br />
-        <Link to="/categories" state={"Womens"} className="link">
+        <Link to="/categories" state={"Tees"} className="link">
           View Products
         </Link>
         <br/>
       </Card>
       <Card className="card">
-        <h1>Womens</h1>
-        <img src={hoodie3} alt="Womens" className="card-content"></img>
+        <h1>Hoodies</h1>
+        <img src={hoodie3} alt="Hoodies" className="card-content"></img>
         <br />
-        <Link to="/categories" state={"Womens"} className="link">
+        <Link to="/categories" state={"Hoodies"} className="link">
           View Products
         </Link>
         <br/>
       </Card>
       <Card className="card">
         <h1>Accessories</h1>
-        <img src={acc3} alt="" className="card-content"></img>
+        <img src={slides1} alt="" className="card-content"></img>
         <br />
         <Link to="/categories" state={"Accessories"} className="link">
           View Products
@@ -81,15 +80,6 @@ return(
         <img src={tools} alt="Womens" className="card-content"></img>
         <br />
         <Link to="/categories" state={"Tools"} className="link">
-          See more
-        </Link>
-        <br/>
-      </Card>
-      <Card className="card">
-        <h1>Others</h1>
-        <img src={others} alt="other" className="card-content"></img>
-        <br />
-        <Link to="/categories" state={"Others"} className="link">
           See more
         </Link>
         <br/>
