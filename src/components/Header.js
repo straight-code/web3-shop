@@ -2,12 +2,13 @@ import { PageHeader, Button, Input, Space, Badge } from 'antd';
 import { useMoralis } from "react-moralis";
 import { Link } from 'react-router-dom';
 import './Header.css'
-import Amazon from "../images/logo.png";
+import str8 from "../images/logo.png";
+import bg from "../images/bg.png";
 import Store from "../images/store.png";
 import {ShoppingCartOutlined, MenuOutlined} from "@ant-design/icons";
 
 const {Search } = Input;
-const categories = ["Mens", "Womens", "Accessories", "Softwares", "Tools", "Others"];
+const categories = ["Hoodies", "Jumpers", "Tees",  "Accessories", "Softwares", "Tools", "Soon"];
 
 const Header = () => {
   const { authenticate, account } = useMoralis();
@@ -17,31 +18,20 @@ const Header = () => {
         ghost={false}
         extra={[
           <>
-          <img src={Amazon} className="logo"></img>
+          <img src={str8} className="logo"></img>
           <img src={Store} className="logo"></img>
-          <Search
-              placeholder="Find A Product"
-              enterButton
-              className = "searchBar"
-            />
-         <Button 
+          <Button 
          className="login"
          key="1" 
          type="primary" 
          onClick={() => authenticate()}>
           {account ? <span>{account.slice(0,5)}...</span> : <span>login</span>}
           </Button>
-          <Space size={"large"}>
-              
-              <Badge count={0} showZero>
-                <span className="header-buttons">
-                  <ShoppingCartOutlined className="header-icon" />
-                  Cart
-                </span>
-              </Badge>
-       
-              
-            </Space>
+          <img src={bg} className="logo"></img>
+          <img src={bg} className="logo"></img>
+          <img src={bg} className="logo"></img>
+          <img src={bg} className="logo"></img> 
+          <Space size={"large"}></Space>
           </>
         ]}>
       </PageHeader>

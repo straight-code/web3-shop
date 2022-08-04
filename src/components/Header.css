@@ -9,7 +9,11 @@
   font-weight: 400;
   padding: 5px 25px;
 }
+.spacer {
+  width: 70%;
+  inset-inline: block;
 
+}
 .categories{
   color:white;
 }
