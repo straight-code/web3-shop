@@ -1,5 +1,26 @@
 .title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+    width: 200px;
   }
-  
+  .ant-layout .ant-layout-has-sider{
+    padding: 5px;
+    flex: 0 0 250px; 
+    max-width: 250px; 
+    min-width: 250px; 
+    width: 250px;
+  }
+  .ant-layout-sider, .ant-layout-sider-light {
+    padding: 5px;
+    flex: 0 0 250px; 
+    max-width: 250px; 
+    min-width: 250px; 
+    width: 250px;
+  }
+ 
+  .ant-card .ant-card-bordered {
+    max-width: 250px;
+    width: auto;
+    height: auto;
+  }
+

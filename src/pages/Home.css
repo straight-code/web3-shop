@@ -1,3 +1,18 @@
+#components-layout-demo-fixed .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background-image: "../images/logo.png"; 
+}
+.site-layout .site-layout-background {
+  background: #fff;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+
+}
+
 .link {
   font-size: 18px;
   margin:5%;
@@ -15,44 +30,55 @@
   position: absolute;
   left: 0;
   top: 0;
+  border-radius: 20px;
 }
 
 .carousel-img {
-  min-width: 100vw;
-  height: 750px;
+  min-width: auto;
+  height: 975px;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .card {
-  width:350px;
-  height:350px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 15px;
+  width:250px;
+  height:300px;
+  border-radius: 20px;
 }
 
 .card-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
 }
 
 .card-category {
-  width: 50%;
+  width: 20%;
 }
+.extra {
+  color: #b700ff;
 
+}
 .cards {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
   position: absolute;
   left: 0;
-  top: 450px;
+  top: 507px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100vw;
+  width: auto;
   gap: 15px; 
+  border-radius: 20px;
 
 }
 
