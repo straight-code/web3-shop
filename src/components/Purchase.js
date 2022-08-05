@@ -1,4 +1,4 @@
-import {Select, Button, Modal, Input} from 'antd'
+import {Select, Button, Modal, Input, Card} from 'antd'
 import {ShoppingCartOutlined} from "@ant-design/icons";
 import { useState } from 'react';
 import { useMoralis } from 'react-moralis';
@@ -44,12 +44,13 @@ function Purchase({book}) {
 
   return (
     <>
+   
       <span className="price"> ${book.price}</span>
       <p>No Import Fees & Free Shipping Included</p>
       <h1 style={{ color: "green" }}> In Stock </h1>
       <Button
       className="login"
-      style={{ width: "100%", marginTop: "50px" }}
+      style={{ width: "100%", marginTop: "10px" }}
       onClick={()=>setIsModalVisible(true)}
     >
       <ShoppingCartOutlined /> Buy Now
@@ -70,6 +71,7 @@ function Purchase({book}) {
           </div>
         </div>
       </Modal>
+    
     </>
   )
 }

@@ -1,9 +1,10 @@
 import {Radio, Rate, Space} from 'antd'
+import "../components/PriceRanges.css";
 
 function Rating({rating, setRating}) {
   return (
     <>
-    <h2>
+    <h2 className='title'>
         Customer Reviews
     </h2>
     <Radio.Group value={rating} onChange={(value)=> setRating(value.target.value)}>

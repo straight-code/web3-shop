@@ -1,5 +1,11 @@
 import { PageHeader, Button, Input, Space, Badge } from 'antd';
 import { useMoralis } from "react-moralis";
+
+import { Link,  } from 'react-router-dom';
+import './Header.css'
+import str8 from "../images/logo.png";
+import bg1 from "../images/bg1.png";
+
 import { Link, useHref } from 'react-router-dom';
 import './Header.css'
 import str8 from "../images/logo.png";
@@ -18,6 +24,10 @@ const Header = () => {
         ghost={false}
         extra={[
           <>
+
+          <img src={str8} className="logo"></img> 
+          <img src={bg1} className="logo"></img>
+
         
           <Space size={"large"}>
           <img src={str8} className="logo"></img>
@@ -43,9 +53,9 @@ const Header = () => {
       </PageHeader>
       <div className="site-page-subheader-ghost-wrapper">
       <Space size={"middle"}>
-        <Space size={"small"} style={{fontWeight:"bold"}}>
-          <MenuOutlined />
-          Categories
+        <Space size={"small"}  className="categories" style={{fontWeight:"bold"}}>
+          <MenuOutlined
+          />
         </Space>
         {categories.map((e) =>{
           return(

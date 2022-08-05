@@ -1,27 +1,51 @@
 import React from 'react';
-import { Rate } from 'antd';
+import { Card } from 'antd';
 import "./Product.css";
 import Header from '../components/Header';
 import { useLocation } from 'react-router';
 import Purchase from '../components/Purchase';
+import { Layout, Menu } from 'antd';
+
+
+const { Sider, Content, Footer  } = Layout;
 
 const Product = () => {
   
   let {state: book} = useLocation();
   return (
-  <>
+<>
+   <Layout>
+    <Header style={{}}/>
+  <Content
+    className="site-layout"
+    style={{
+      padding: '0 50px',
+      marginTop: 64,
+    }}
+  >
+    <div className="site-layout-background"
+      style={{
+        padding: 24,
+        minHeight: 380,
+      }}
+    >
+      
   <div className="container">
-    <Header />
+  <Card
+
+hoverable
+style={{
+width: 350,
+borderRadius: 20,
+padding:2,
+}}
+cover={<img alt="example" src={book.image} />}
+>
     <div className="product-content">
-      <div>
-        <div className="product-img">
-          <img src={book.image} alt="product" width="100%"></img>
-        </div>
-        <p style={{ textAlign: "center" }}>Hover over image to zoom</p>
-      </div>
+
+      
       <div className="product-details">
         <h1>{book.name}</h1>
-        <Rate value={book.rating} disabled={true}></Rate>
         <hr></hr>
         <p>
           Price:
@@ -30,19 +54,30 @@ const Product = () => {
         <p>
           No Import Fees & Free Shipping Included
         </p>
-        <hr></hr>
+      <hr/>
         <h3>About This Item</h3>
         <p>
           {book.about}
         </p>
       </div>
-      <div className="purchase-details">
+    </div>
+    <div className="purchase-details">
       <Purchase book={book}/>
       </div>
-    </div>
-  </div>
+</Card> 
+</div>
+ </div>
+    </Content>
+    <Footer
+      style={{
+        textAlign: 'center',
+      }}
+    >
+      shop.straight-code ©2022 Created by straight-code
+    </Footer>
+  </Layout>
   </>
-)
-}
+);
+};
 
 export default Product;
