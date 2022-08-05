@@ -1,9 +1,16 @@
+
 .prices {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
   }
   
   .prices:hover {
     color: #ba3ffd;
     cursor: pointer;
+  }
+
+  .ant-card .ant-card-bordered {
+    max-width: 250px;
+    width: auto;
+    height: auto;
   }

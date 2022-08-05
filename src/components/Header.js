@@ -1,15 +1,12 @@
 import { PageHeader, Button, Input, Space, Badge } from 'antd';
 import { useMoralis } from "react-moralis";
-import { Link } from 'react-router-dom';
+import { Link,  } from 'react-router-dom';
 import './Header.css'
 import str8 from "../images/logo.png";
-import bg from "../images/bg.png";
 import bg1 from "../images/bg1.png";
+import {MenuOutlined} from "@ant-design/icons";
 
-import Store from "../images/store.png";
-import {ShoppingCartOutlined, MenuOutlined} from "@ant-design/icons";
 
-const {Search } = Input;
 const categories = ["Hoodies", "Jumpers", "Tees",  "Accessories", "Softwares", "Tools", "Soon"];
 
 const Header = () => {
@@ -20,16 +17,14 @@ const Header = () => {
         ghost={false}
         extra={[
           <>
-          <img src={str8} className="logo"></img>
+          <img src={str8} className="logo"></img> 
           <img src={bg1} className="logo"></img>
-          
-
           <Button 
          className="login"
          key="1" 
          type="primary" 
          onClick={() => authenticate()}>
-          {account ? <span>{account.slice(0,5)}...</span> : <span>login</span>}
+          {account ? <span>{account.slice(0,5)}...</span> : <span>LOGIN</span>}
           </Button>
           <Space size={"large"}></Space>
           </>
@@ -37,9 +32,9 @@ const Header = () => {
       </PageHeader>
       <div className="site-page-subheader-ghost-wrapper">
       <Space size={"middle"}>
-        <Space size={"small"} style={{fontWeight:"bold"}}>
-          <MenuOutlined />
-          Categories
+        <Space size={"small"}  className="categories" style={{fontWeight:"bold"}}>
+          <MenuOutlined
+          />
         </Space>
         {categories.map((e) =>{
           return(

@@ -1,112 +1,163 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import "./Home.css";
-import { Carousel, Card } from 'antd';
+import { Carousel } from 'antd';
 import Carousel1 from "../images/carousel1.png";
 import Carousel2 from "../images/carousel2.png";
 import Carousel3 from "../images/carousel3.png";
 import productsImg from "../images/products.png";
-import tee1 from "../images/6.png";
-import hoodie3 from "../images/5.png";
-import acc2 from "../images/1.png";
-import acc3 from "../images/4.png";
-import softwares from "../images/softwares.png";
 import tools from "../images/tools.png";
-import others from "../images/others.png";
-import soon from "../images/soon.png";
+import Header from "../components/Header";
+import 'antd/dist/antd.css';
+import "antd/dist/antd.less";
+import { Layout } from 'antd';
+import { Card } from 'antd';
+import Ad from '../components/Ad';
+import Ad1 from "../images/Ad1.mp4";
+import Ad2 from "../images/Ad2.mp4";
+import Ad3 from "../images/Ad3.mp4";
 
 
+const { Content, Footer } = Layout;
 const carousel = [Carousel1,Carousel2,Carousel3];
-const catCard = [acc2, tee1,hoodie3,acc3];
+const ad = [Ad1, Ad2, Ad3];
+
+
+const tabList = [
+  {
+    key: 'tab1',
+    tab: 'Softwares',
+  },
+  {
+    key: 'tab2',
+    tab: 'Tools',
+  },
+];
+const contentList = {
+  tab1: <p>
+    These are some softwares that straight-code supports. 
+    <br/>
+    Coming Soon
+    </p>,
+  tab2: <p>
+    This are some tools straight-code provides. 
+    <br/>
+    Coming Soon
+  </p>,
+};
+
+
 const Home = () => {
+  const [activeTabKey1, setActiveTabKey1] = useState('tab1');
+  const [activeTabKey2, setActiveTabKey2] = useState('tab2');
+
+  const onTab1Change = (key) => {
+    setActiveTabKey1(key);
+  };
+
+  const onTab2Change = (key) => {
+    setActiveTabKey2(key);
+  };
 
 return(
-  <>
+  <Layout>
+    <Header style={{}}/>
+  <Content
+    className="site-layout"
+    style={{
+      padding: '0 50px',
+      marginTop: 64,
+    }}
+  >
+    <div className="site-layout-background"
+      style={{
+        padding: 24,
+        minHeight: 340,
+      }}
+    >
   <div className="container">
-    <Header/>
     <Carousel autoplay className="carousel">
     {carousel.map((e) => {
         return <img src={e} className="carousel-img" alt="carousel"></img>;
     })}
     </Carousel>
-    <div className="cards">  
-      <Card className="card">
-        <h1>Browse</h1>
-        <img src={productsImg} alt="ALL" className="card-content"></img>
-        <br />
-        <Link to="/categories" state={"Mens"} className="link">
-          Shop Now
-        </Link>
-        <br/>
+    <br/>
+    
+    <div className="site-card-wrapper">
+      <div className='cards'>
+      
+          <Card title='' bordered={false}
+          className="card"
+        style={{
+          marginLeft: 85,
+        }}>
+          <h1>Browse</h1>
+          <img src={productsImg} alt="ALL" className="card-content"></img>
+          <br />
+          <Link to="/categories" state={"Hoodies"} className="link">
+            Shop Now
+          </Link>
+          <br/>
+          </Card>
+
+          <Card title='' bordered={false}
+          className="card"
+        style={{
+          marginLeft: 85,
+        }}>
+          <h1>Browse Tools</h1>
+          <img src={tools} alt="ALL" className="card-content"></img>
+          <br />
+          <Link to="/categories" state={"Hoodies"} className="link">
+            See more
+          </Link>
+          <br/>
+          </Card>
+      </div>
+      </div>
+
+   
+</div>
+<br/>
+<br/>
+<Card
+        style={{
+          width: '100%',
+          className: "extra"
+        }}
+        title=""
+        extra={<a href="https://straight-code.xyz/services/index.html">More</a>}
+        tabList={tabList}
+        activeTabKey={activeTabKey1}
+        onTabChange={(key) => {
+          onTab1Change(key);
+        }}
+      >
+        {contentList[activeTabKey1]}
       </Card>
-      <Card className="card">
-        <h1>Mens</h1>
-        <img src={tee1} alt="Womens" className="card-content"></img>
-        <br />
-        <Link to="/categories" state={"Womens"} className="link">
-          View Products
-        </Link>
-        <br/>
-      </Card>
-      <Card className="card">
-        <h1>Womens</h1>
-        <img src={hoodie3} alt="Womens" className="card-content"></img>
-        <br />
-        <Link to="/categories" state={"Womens"} className="link">
-          View Products
-        </Link>
-        <br/>
-      </Card>
-      <Card className="card">
-        <h1>Accessories</h1>
-        <img src={acc3} alt="" className="card-content"></img>
-        <br />
-        <Link to="/categories" state={"Accessories"} className="link">
-          View Products
-        </Link>
-        <br/>
-      </Card>
-      <Card className="card">
-        <h1>Softwares</h1>
-        <img src={softwares} alt="softwares" className="card-content"></img>
-        <br />
-        <Link to="/categories" state={"Softwares"} className="link">
-          See more
-        </Link>
-        <br/>
-      </Card>
-      <Card className="card">
-        <h1>Tools</h1>
-        <img src={tools} alt="Womens" className="card-content"></img>
-        <br />
-        <Link to="/categories" state={"Tools"} className="link">
-          See more
-        </Link>
-        <br/>
-      </Card>
-      <Card className="card">
-        <h1>Others</h1>
-        <img src={others} alt="other" className="card-content"></img>
-        <br />
-        <Link to="/categories" state={"Others"} className="link">
-          See more
-        </Link>
-        <br/>
-      </Card>
-      <Card className="card">
-        <h1>Coming Soon</h1>
-        <img src={soon} alt="Coming soon" className="card-content"></img>
-        <br />
-        <Link to="/categories" state={"Soon"} className="link">
-          See more
-        </Link>
-        <br/>
-      </Card>
-    </div>
+      <br />
+      <br />
+      <Ad 
+      />
+      <br/>
+      <br/>
+      <br/> 
+      
+    
+      
+    
   </div>
-  </>
-)
-}
+    </Content>
+    <Footer
+      style={{
+        textAlign: 'center',
+      }}
+    >
+      shop.straight-code ©2022 Created by straight-code
+    </Footer>
+  </Layout>
+
+);
+};
 
 export default Home;
