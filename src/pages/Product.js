@@ -36,14 +36,11 @@ const Product = () => {
     >
       
   <div className="container">
-  <Link to="/" className="categories">
-          
-            </Link>
   <Card
 
 hoverable
 style={{
-width: 350,
+width: 300,
 borderRadius: 20,
 padding:2,
 }}
