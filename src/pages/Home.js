@@ -106,7 +106,7 @@ return(
           <h1>Browse Tools</h1>
           <img src={tools} alt="ALL" className="card-content"></img>
           <br />
-          <Link to="/categories" state={"Hoodies"} className="link">
+          <Link to="/categories" state={"Tools"} className="link">
             See more
           </Link>
           <br/>
@@ -121,7 +121,7 @@ return(
 <Card
         style={{
           width: '100%',
-          
+
         }}
         title=""
         extra={<a style={{color: "#b700ff"}} href="https://straight-code.xyz/services/index.html">More</a>}
@@ -135,8 +135,7 @@ return(
       </Card>
       <br />
       <br />
-      <Ad 
-      />
+      
       <br/>
       <br/>
       <br/> 
@@ -151,7 +150,7 @@ return(
         textAlign: 'center',
       }}
     >
-      shop.straight-code ©2022 Created by straight-code
+      shop.straight-code ©2022 Created by <a style={{color: "#b700ff", fontWeight: 500,}} href='https://straight-code.xyz'>straight-code</a>
     </Footer>
   </Layout>
 
