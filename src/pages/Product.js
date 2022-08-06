@@ -4,10 +4,14 @@ import "./Product.css";
 import Header from '../components/Header';
 import { useLocation } from 'react-router';
 import Purchase from '../components/Purchase';
-import { Layout, Menu } from 'antd';
+import { Layout } from 'antd';
+import { Link } from "react-router-dom";
 
 
-const { Sider, Content, Footer  } = Layout;
+
+
+
+const {  Content, Footer  } = Layout;
 
 const Product = () => {
   
@@ -16,11 +20,12 @@ const Product = () => {
 <>
    <Layout>
     <Header style={{}}/>
+  
   <Content
     className="site-layout"
     style={{
-      padding: '0 50px',
-      marginTop: 64,
+      padding: '0 10px',
+      marginTop: 10,
     }}
   >
     <div className="site-layout-background"
@@ -31,6 +36,9 @@ const Product = () => {
     >
       
   <div className="container">
+  <Link to="/" className="categories">
+          
+            </Link>
   <Card
 
 hoverable

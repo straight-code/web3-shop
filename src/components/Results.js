@@ -2,7 +2,7 @@ import {Card } from 'antd';
 import { Link } from 'react-router-dom';
 import "./Results.css";
 import {books} from "../books.js";
-import React, { useState } from 'react';
+import React from 'react';
 
 
 function Results({category }) {

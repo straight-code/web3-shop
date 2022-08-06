@@ -2,13 +2,12 @@ import React from "react";
 import { Card, Layout } from "antd";
 import { useLocation } from "react-router";
 import Header from "../components/Header";
-import { useState } from "react";
 import Results from "../components/Results";
 import "../pages/Categories.css";
 
 
 
-const { Sider, Content, Footer  } = Layout;
+const { Content, Footer  } = Layout;
 
 const Categories = () => {
   const { state: category } = useLocation(0);
@@ -21,8 +20,8 @@ const Categories = () => {
   <Content
     className="site-layout"
     style={{
-      padding: '0 50px',
-      marginTop: 64,
+      padding: '0 10px',
+      marginTop: 10,
     }}
   >
     <div
@@ -46,8 +45,8 @@ const Categories = () => {
             style={{ padding: "5px", backgroundColor: "white" }}
           >
             <h1 style={{fontSize:"30px"}}>RESULTS</h1>
-    <Card>
-      <Results category={category} />
+    <Card >
+      <Results className='card-product' category={category} />
     </Card>
             
           </Content>

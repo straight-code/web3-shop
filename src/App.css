@@ -1,4 +1,7 @@
-
+.ant-layout-content .site-layout {
+  padding: 0 50px;
+  margin-top: 20px;
+}
 
 .ant-page-header {
   background-color: #131921;
