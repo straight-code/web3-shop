@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import { useLocation } from 'react-router';
 import Purchase from '../components/Purchase';
 import { Layout } from 'antd';
-import { Link } from "react-router-dom";
+
 
 
 
