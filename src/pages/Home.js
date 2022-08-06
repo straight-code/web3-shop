@@ -12,7 +12,7 @@ import 'antd/dist/antd.css';
 import "antd/dist/antd.less";
 import { Layout } from 'antd';
 import { Card } from 'antd';
-import Ad from '../components/Ad';
+import Donate from '../components/Donate';
 
 
 
@@ -151,6 +151,9 @@ return(
       }}
     >
       shop.straight-code ©2022 Created by <a style={{color: "#b700ff", fontWeight: 500,}} href='https://straight-code.xyz'>straight-code</a>
+      <br/>
+      <br/>
+      <Donate className='login' style={{color:"#b700ff",}}/>
     </Footer>
   </Layout>
 
