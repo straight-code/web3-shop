@@ -1,9 +1,7 @@
 import { Button, message, Steps } from 'antd';
 import React, { useState } from 'react';
 import "../components/Ad.css"
-import Ad1 from "../images/Ad1.mp4";
-import Ad2 from "../images/Ad2.mp4";
-import Ad3 from "../images/Ad3.mp4";
+
 
 const { Step } = Steps;
 

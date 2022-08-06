@@ -55,13 +55,9 @@
   justify-content: space-between;
   margin-left: 10px;
   margin-right: 10px;
-
   width: 150px;
   height: 150px;
   border-radius: 20px;
-
-  width: 200px;
-  height: 200px;
 }
 
 .card-category {
@@ -70,6 +66,12 @@
 .extra {
   color: #b700ff;
 
+}
+.ant-tabs-tab-btn {
+  color: #000;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #b700ff;
 }
 .cards {
   display: flex;
