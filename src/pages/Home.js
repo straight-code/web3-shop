@@ -20,42 +20,7 @@ const { Content, Footer } = Layout;
 const carousel = [Carousel1,Carousel2,Carousel3];
 
 
-
-const tabList = [
-  {
-    key: 'tab1',
-    tab: 'Softwares',
-  },
-  {
-    key: 'tab2',
-    tab: 'Tools',
-  },
-];
-const contentList = {
-  tab1: <p>
-    These are some softwares that straight-code supports. 
-    <br/>
-    Coming Soon
-    </p>,
-  tab2: <p>
-    This are some tools straight-code provides. 
-    <br/>
-    Coming Soon
-  </p>,
-};
-
-
 const Home = () => {
-  const [activeTabKey1, setActiveTabKey1] = useState('tab1');
-  const [activeTabKey2, setActiveTabKey2] = useState('tab2');
-
-  const onTab1Change = (key) => {
-    setActiveTabKey1(key);
-  };
-
-  const onTab2Change = (key) => {
-    setActiveTabKey2(key);
-  };
 
 return(
   <Layout>
@@ -117,28 +82,7 @@ return(
    
 </div>
 <br/>
-<br/>
-<Card
-        style={{
-          width: '100%',
-
-        }}
-        title=""
-        extra={<a style={{color: "#b700ff"}} href="https://straight-code.xyz/services/index.html">More</a>}
-        tabList={tabList}
-        activeTabKey={activeTabKey1}
-        onTabChange={(key) => {
-          onTab1Change(key);
-        }}
-      >
-        {contentList[activeTabKey1]}
-      </Card>
-      <br />
-      <br />
-      
-      <br/>
-      <br/>
-      <br/> 
+ 
       
     
       
@@ -154,6 +98,8 @@ return(
       <br/>
       <br/>
       <Donate className='login' style={{color:"#b700ff",}}/>
+      <br/>
+      <br/>
     </Footer>
   </Layout>
 

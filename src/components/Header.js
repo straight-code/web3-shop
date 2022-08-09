@@ -2,14 +2,14 @@ import { PageHeader, Button, Space } from 'antd';
 import { useMoralis } from "react-moralis";
 import { Link,  } from 'react-router-dom';
 import './Header.css'
-import str8 from "../images/logo.png";
-import bg1 from "../images/bg1.png";
+import logo from "../images/logo.png";
+import logo1 from "../images/logo1.png";
 import {MenuOutlined} from "@ant-design/icons";
 
-
-const categories = ["Hoodies", "Jumpers", "Tees",  "Accessories", "Softwares", "Tools", "Soon"];
+const categories = ["All", "Hoodies", "Jumpers", "Tees",  "Accessories", "Tools"];
 
 const Header = () => {
+
   const { authenticate, account } = useMoralis();
   return(
     <div className="site-page-header-ghost-wrapper">
@@ -17,8 +17,8 @@ const Header = () => {
         ghost={false}
         extra={[
           <>
-          <img src={str8} alt="logo" className="logo"></img> 
-          <img src={bg1} alt="NEED METAMASK" className="logo"></img>
+          <img src={logo1} alt="logo" className="logo"></img> 
+          <img src={logo} alt="logo" className="logo"></img>
           <Button 
          className="login"
          key="1" 
@@ -45,7 +45,10 @@ const Header = () => {
 
         })}
       </Space>
+
     </div>
+   
+  
     </div>
   )
 }
