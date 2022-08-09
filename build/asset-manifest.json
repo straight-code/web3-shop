@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.8dd70815.css",
-    "main.js": "/static/js/main.9e5cfca2.js",
+    "main.js": "/static/js/main.3e2cc439.js",
     "static/js/787.39873718.chunk.js": "/static/js/787.39873718.chunk.js",
-    "static/media/carousel2.png": "/static/media/carousel2.997a32d6aa0370bdeb16.png",
     "static/media/tee4.png": "/static/media/tee4.d50ca9ea0ae318ece092.png",
-    "static/media/carousel1.png": "/static/media/carousel1.f7fb63ae95da7db9d015.png",
     "static/media/tee5.png": "/static/media/tee5.81e0569b4532f7153b39.png",
     "static/media/tee2.png": "/static/media/tee2.2ff4ac57900e5004908e.png",
     "static/media/tee3.png": "/static/media/tee3.5deae797ccf65db22e72.png",
     "static/media/coffee1.png": "/static/media/coffee1.8497f5c79af61e604aff.png",
-    "static/media/carousel3.png": "/static/media/carousel3.990a4cc32e894621b078.png",
     "static/media/socks1.png": "/static/media/socks1.26f880f3563fd9f95734.png",
+    "static/media/carousel2.png": "/static/media/carousel2.4a76ed25941b6374a16d.png",
     "static/media/hoodie1.png": "/static/media/hoodie1.8a2236d14a0503882724.png",
     "static/media/sticker1.png": "/static/media/sticker1.e3bd99b4b54fc28e1ed5.png",
     "static/media/products.png": "/static/media/products.0f964e216ed12afae45a.png",
     "static/media/calander1.png": "/static/media/calander1.45156bf4fd9d5271851c.png",
     "static/media/speaker1.png": "/static/media/speaker1.d2417361c793ff39c0d9.png",
     "static/media/jumper1.png": "/static/media/jumper1.5454b9456a811ab83f65.png",
+    "static/media/carousel3.png": "/static/media/carousel3.98ce576b45c2fb7f492d.png",
+    "static/media/carousel1.png": "/static/media/carousel1.141c82db9ff66b5116ad.png",
     "static/media/hoodie6.png": "/static/media/hoodie6.c6670e934d1d3a07a04a.png",
     "static/media/hoodie5.png": "/static/media/hoodie5.6fafd276c4f475cd29bc.png",
     "static/media/hoodie4.png": "/static/media/hoodie4.0bfbbfcb5731d78b9327.png",
@@ -30,16 +30,15 @@
     "static/media/sticker2.png": "/static/media/sticker2.43e2fd75b69834b3f9d5.png",
     "static/media/charger1.png": "/static/media/charger1.da5758c787487dcae825.png",
     "static/media/logo1.png": "/static/media/logo1.c4e9d8002a6d922a7be1.png",
-    "static/media/bg1.png": "/static/media/bg1.f6d85ebf1c6de41f582b.png",
     "static/media/logo.png": "/static/media/logo.ea936a278fedb38ef812.png",
     "index.html": "/index.html",
     "static/media/antd.less": "/static/media/antd.7affb7a1925b6ab47ea6.less",
     "main.8dd70815.css.map": "/static/css/main.8dd70815.css.map",
-    "main.9e5cfca2.js.map": "/static/js/main.9e5cfca2.js.map",
+    "main.3e2cc439.js.map": "/static/js/main.3e2cc439.js.map",
     "787.39873718.chunk.js.map": "/static/js/787.39873718.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8dd70815.css",
-    "static/js/main.9e5cfca2.js"
+    "static/js/main.3e2cc439.js"
   ]
 }
