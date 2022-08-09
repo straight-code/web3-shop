@@ -29,6 +29,184 @@ import sticker3 from "./images/sticker3.png";
 
 
 export const books = {
+  All: [
+    {
+      name: "straight-code® sticker #001",
+      price: 2.50,
+      rating: 5,
+      image: sticker1,
+      about:
+        "Enjoy your straight-code® stickers."
+    },
+    {
+      name: "straight-code® sticker #002",
+      price: 11.99,
+      rating: 4,
+      image: sticker2,
+      about:
+        "Enjoy your straight-code® stickers."
+    },
+    {
+      name: "straight-code® sticker #003",
+      price: 7.99,
+      rating: 3,
+      image: sticker3,
+      about:
+        "Enjoy your straight-code® stickers."
+    },
+    {
+      name: "straight-code® hoodie #001",
+      price: 45.00,
+      rating: 1,
+      image: hoodie1,
+      about:
+        "Enjoy the soft feeling of a straight-code® hoodie. ",
+    },
+    {
+      name: "straight-code® hoodie #002",
+      price: 45.00,
+      rating: 1,
+      image: hoodie2,
+      about:
+        "Enjoy the soft feeling of a straight-code® hoodie.",
+    },
+    {
+      name: "straight-code® hoodie #003",
+      price: 45.00,
+      rating: 1,
+      image: hoodie3,
+      about:
+        "Enjoy the soft feeling of a straight-code® hoodie.",
+    },
+    {
+      name: "straight-code® hoodie #004",
+      price: 45.00,
+      rating: 1,
+      image: hoodie4,
+      about:
+        "Enjoy the soft feeling of a straight-code® hoodie.",
+    },
+    {
+      name: "straight-code® hoodie #005",
+      price: 45.00,
+      rating: 1,
+      image: hoodie5,
+      about:
+        "Enjoy the soft feeling of a straight-code® hoodie.",
+    },
+    {
+      name: "straight-code® hoodie #006",
+      price: 45.00,
+      rating: 1,
+      image: hoodie6,
+      about:
+        "Enjoy the soft feeling of a straight-code® hoodie.",
+    },
+    {
+      name: "straight-code® mouse pad",
+      price: 35.00,
+      rating: 1,
+      image: pad1,
+      about:
+        "Finish your gaminng setup with your straight-code® mouse pad."
+    },
+    {
+      name: "straight-code® slides",
+      price: 75.00,
+      rating: 3,
+      image: slides1,
+      about:
+        "Finish off your look with your straight-code® slides."
+    },
+    {
+      name: "straight-code® socks #001",
+      price: 15.99,
+      rating: 4,
+      image: socks1,
+      about:
+        "Enjoy your straight-code® socks."
+    },
+    {
+      name: "straight-code® charger #001",
+      price: 25.99,
+      rating: 4,
+      image: charger1,
+      about:
+        "Enjoy your straight-code® charger."
+    },
+    {
+      name: "straight-code® speaker #001",
+      price: 25.99,
+      rating: 4,
+      image: speaker1,
+      about:
+        "Enjoy your straight-code® speaker."
+    },
+    {
+      name: "straight-code® 20oz tumbler #001",
+      price: 30.99,
+      rating: 4,
+      image: coffee1,
+      about:
+        "Enjoy your straight-code® 20oz tumbler."
+    },
+    {
+      name: "straight-code® calander #001",
+      price: 25.99,
+      rating: 4,
+      image: calander1,
+      about:
+        "Enjoy your straight-code® calander."
+    },
+    {
+      name: "straight-code® Jumper #001",
+      price: 25.00,
+      rating: 1,
+      image: jumper1,
+      about:
+        "Enjoy the soft feeling of a straight-code® jumper.",
+    },
+    {
+      name: "straight-code® tee #001",
+      price: 25.00,
+      rating: 1,
+      image: tee1,
+      about:
+        "Enjoy the soft feeling of a straight-code® tee.",
+    },
+    {
+      name: "straight-code® tee #002",
+      price: 25.00,
+      rating: 1,
+      image: tee2,
+      about:
+        "Enjoy the soft feeling of a straight-code® tee.",
+    },
+    {
+      name: "straight-code® tee #003",
+      price: 25.00,
+      rating: 1,
+      image: tee3,
+      about:
+        "Enjoy the soft feeling of a straight-code® tee.",
+    },
+    {
+      name: "straight-code® tee #004",
+      price: 25.00,
+      rating: 1,
+      image: tee4,
+      about:
+        "Enjoy the soft feeling of a straight-code® tee.",
+    },
+    {
+      name: "straight-code® tee #005",
+      price: 25.00,
+      rating: 1,
+      image: tee5,
+      about:
+        "Enjoy the soft feeling of a straight-code® tee.",
+    },
+  ],
   Hoodies: [
     {
       name: "straight-code® hoodie #001",
@@ -217,7 +395,6 @@ export const books = {
     },
 
   ],
-  Softwares: [],
   Tools: [],
-  Soon: [],
+
 };

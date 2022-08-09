@@ -1,5 +1,5 @@
 import {Radio, Rate, Space} from 'antd'
-import "../components/PriceRanges.css";
+import "../components/PriceRanges.css"
 
 function Rating({rating, setRating}) {
   return (

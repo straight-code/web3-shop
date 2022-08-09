@@ -37,7 +37,7 @@ function Purchase({book}) {
     transaction.set("Customer", account);
     transaction.set("Delivery", delivery);
     transaction.set("Product", book.name);
-
+    transaction.set("Price", book.price);
     transaction.save()
     setIsModalVisible(false);
   }

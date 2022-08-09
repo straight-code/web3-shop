@@ -11,11 +11,7 @@ function PriceRanges({priceMin, setPriceMin, priceMax, setPriceMax}) {
   return (
     <>
    
-    <h2 className='title' style={
-      {
-        fontSize: 18,
-      }
-    }>
+    <h2 className='title' style={{fontSize: 18,}}>
         Price Ranges
     </h2>
     <p className="prices" onClick={() => changePrice(0,10)}>Under $10</p>

@@ -4,8 +4,7 @@ import { useLocation } from "react-router";
 import Header from "../components/Header";
 import Results from "../components/Results";
 import "../pages/Categories.css";
-
-
+import Donate from '../components/Donate';
 
 const { Content, Footer  } = Layout;
 
@@ -27,7 +26,7 @@ const Categories = () => {
     <div
       className="site-layout-background"
       style={{
-        padding: 24,
+        padding: 34,
         minHeight: 400,
       }}
     >
@@ -36,14 +35,15 @@ const Categories = () => {
           <span>Showing Products for </span>
           <span className="category">"{category}"</span>
         </div>
+  
 
         <Layout>
- 
 
           <Content
             theme="light"
-            style={{ padding: "5px", backgroundColor: "white" }}
+            style={{ padding: "15px", backgroundColor: "white" }}
           >
+          
             <h1 style={{fontSize:"30px"}}>RESULTS</h1>
     <Card >
       <Results className='card-product' category={category} />
@@ -60,6 +60,11 @@ const Categories = () => {
       }}
     >
       shop.straight-code ©2022 Created by straight-code
+      <br/>
+      <br/>
+      <Donate />
+      <br/>
+      <br/>
     </Footer>
   </Layout>
     </>

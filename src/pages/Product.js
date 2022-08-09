@@ -5,9 +5,7 @@ import Header from '../components/Header';
 import { useLocation } from 'react-router';
 import Purchase from '../components/Purchase';
 import { Layout } from 'antd';
-
-
-
+import Donate from '../components/Donate';
 
 
 
@@ -79,6 +77,11 @@ cover={<img alt="example" src={book.image} />}
       }}
     >
       shop.straight-code ©2022 Created by straight-code
+      <br/>
+      <br/>
+      <Donate />
+      <br/>
+      <br/>
     </Footer>
   </Layout>
   </>
